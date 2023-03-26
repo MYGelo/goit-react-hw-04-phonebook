@@ -29,7 +29,7 @@ export const App = () => {
   };
   const getNewList = () => {
     const newContactList = contacts.filter(contact => {
-      return contact.name.toLowerCase().includes(filter.toLowerCase());
+      return contact.name?.toLowerCase().includes(filter.toLowerCase());
     });
     return newContactList;
   };
